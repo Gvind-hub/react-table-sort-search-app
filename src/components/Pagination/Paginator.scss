@@ -1,0 +1,27 @@
+.paginator {
+  padding: 30px;
+
+  &__pagination {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__elem {
+    border: gray 1px solid;
+    padding: 3px 6px;
+    margin: 0 3px;
+  &--active {
+    background-color: black;
+
+  }
+  }
+
+  &__link {
+    color: black;
+    &--active {
+      color: white;
+    }
+  }
+}

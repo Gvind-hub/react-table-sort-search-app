@@ -1,0 +1,65 @@
+.table {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+
+  &__header {
+    border-bottom: black 2px solid;
+  }
+
+  &__header-raw {
+    padding: 5px 0;
+  }
+
+  &__header-title {
+    cursor: pointer;
+    font-weight: 500;
+
+    &.asc {
+      &::after {
+        content: "\2193";
+        margin-left: 5px;
+        opacity: 0;
+      }
+    }
+
+    &.desc {
+      &::after {
+        content: "\2191";
+        margin-left: 5px;
+        opacity: 0;
+      }
+    }
+
+    &.sorted {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__raw {
+    transition: all .15s ease-in-out;
+
+    &:hover {
+      background-color: #fafafa;
+    }
+
+    &.selected {
+      background-color: #f1f1f1;
+    }
+  }
+
+  &__cell {
+    padding: 5px 0;
+
+    cursor: pointer;
+    border-bottom: gray 1px solid;
+  }
+}

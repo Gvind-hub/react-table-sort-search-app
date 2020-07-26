@@ -1,0 +1,17 @@
+.search {
+  display: flex;
+  align-items: center;
+
+  ion-icon {
+    cursor: inherit;
+
+    &:hover {
+      --ionicon-stroke-width: 16px;
+    }
+  }
+
+  &__input {
+    font-size: 20px;
+    border-bottom: black 1px solid;
+  }
+}
