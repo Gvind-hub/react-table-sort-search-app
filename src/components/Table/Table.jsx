@@ -1,7 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
 
-
 import './Table.scss'
 
 const Table = ({data, sortData, sortType, sortedField, onSelect, selectedUser}) => {
